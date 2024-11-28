@@ -172,7 +172,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 main .form-container {
   width: 250px;
