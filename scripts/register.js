@@ -65,12 +65,6 @@ inputFocus6.addEventListener("blur", () => {
   focusDiv6.style.backgroundColor = "#fff3cd";
 })
 
-fullName = inputFocus3.value + " " + inputFocus4;
-email1 = inputFocus5.value;
-password1 = inputFocus6.value
-
-email2 = inputFocus1.value;
-password2 = inputFocus2.value
 
 // LOGIN AND REGISTER FUNCTIONALITY
 const loginBtn = document.getElementById("loginBtn");
@@ -89,38 +83,54 @@ function toggleRegister() {
 }
 
 // Create Account
-const user = {
-  fullName,
-  email: email1,
-  password: password1
-}
 
-const signUpBTN = document.getElementById("register1");
+const signUpBTN = document.getElementById("signUpBTN");
+document.getElementById("registerForm").addEventListener("submit", (e) => {
+  e.preventDefault()
 
-signUpBTN.addEventListener("click", () => {
-  localStorage.setItem("user", JSON.stringify(user));
-  alert("Registration Successful");
+  fullName1 = inputFocus3.value + " " + inputFocus4;
+  email1 = inputFocus5.value;
+  password1 = inputFocus6.value
+
+
+  let user1 = {
+  fullName1,
+  email1,
+  password1
+  }
+
+  localStorage.setItem("user1", JSON.stringify(user1));
+  alert("Registration Successful, Login");
+  console.log(localStorage);
   toggleLogin();
 })
 
-function getUser() {
-  const student = JSON.parse(localStorage.getItem("user"));
-  return student
+signUpBTN.addEventListener("click", () => {
+
+})
+
+function getUser1() {
+  let student1 =  JSON.parse(localStorage.getItem("user1"));
+  return student1
 }
 
 document.getElementById("loginForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let student = getUser();
-  if (student) {
+  let email2 = inputFocus1.value;
+  let password2 = inputFocus2.value
+
+  let student1 = getUser1();
+  if (student1) {
     // Check if Email and password match:
-    if (email2 === student.email1 && password2 === student.password1) {
+    if (email2 === student1.email1 && password2 === student1.password1) {
       alert("Login successful");
 
       // Redirect user from database(localStorage);
       window.location.href = "./homepage.html"
     }  else {
       alert("Invalid Email and Password combination! Please try again")
+      toggleRegister();
     }
   }  else {
     alert("No account found. Please register first")
