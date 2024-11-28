@@ -65,6 +65,13 @@ inputFocus6.addEventListener("blur", () => {
   focusDiv6.style.backgroundColor = "#fff3cd";
 })
 
+fullName = inputFocus3.value + " " + inputFocus4;
+email1 = inputFocus5.value;
+password1 = inputFocus6.value
+
+email2 = inputFocus1.value;
+password2 = inputFocus2.value
+
 // LOGIN AND REGISTER FUNCTIONALITY
 const loginBtn = document.getElementById("loginBtn");
 const registerBtn = document.getElementById("registerBtn");
@@ -80,3 +87,43 @@ function toggleRegister() {
   login.style.left = "-510px";
   register.style.right = "500px";
 }
+
+// Create Account
+const user = {
+  fullName,
+  email: email1,
+  password: password1
+}
+
+const signUpBTN = document.getElementById("register1");
+
+signUpBTN.addEventListener("click", () => {
+  localStorage.setItem("user", JSON.stringify(user));
+  alert("Registration Successful");
+  toggleLogin();
+})
+
+function getUser() {
+  const student = JSON.parse(localStorage.getItem("user"));
+  return student
+}
+
+document.getElementById("loginForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let student = getUser();
+  if (student) {
+    // Check if Email and password match:
+    if (email2 === student.email1 && password2 === student.password1) {
+      alert("Login successful");
+
+      // Redirect user from database(localStorage);
+      window.location.href = "./homepage.html"
+    }  else {
+      alert("Invalid Email and Password combination! Please try again")
+    }
+  }  else {
+    alert("No account found. Please register first")
+    toggleRegister();
+  }
+})
