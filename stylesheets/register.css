@@ -175,7 +175,7 @@ main {
   align-content: center;
 }
 main .form-container {
-  width: 300px;
+  width: 500px;
   height: max-content;
   padding: 20px 10px;
   background: var(--background-color);
@@ -193,7 +193,7 @@ main .form-container form {
   align-items: center;
   align-content: center;
   justify-content: center;
-  width: 300px;
+  width: 500px;
   height: 100%;
   background: transparent;
   position: relative;
