@@ -72,7 +72,7 @@ const login = document.getElementById("loginForm")
 const register = document.getElementById("registerForm")
 
 function toggleLogin() {
-  login.style.left = "4px"
+  login.style.left = "0px"
   register.style.right = "-520px"
 }
 

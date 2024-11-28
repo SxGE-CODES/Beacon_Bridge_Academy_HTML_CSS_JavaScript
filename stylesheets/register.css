@@ -175,7 +175,7 @@ main {
   align-content: center;
 }
 main .form-container {
-  width: 500px;
+  width: 300px;
   height: max-content;
   padding: 20px 10px;
   background: var(--background-color);
@@ -193,7 +193,7 @@ main .form-container form {
   align-items: center;
   align-content: center;
   justify-content: center;
-  width: 500px;
+  width: 300px;
   height: 100%;
   background: transparent;
   position: relative;
@@ -357,7 +357,7 @@ main .form-container form:nth-of-type(1) div:nth-of-type(5) a:hover {
 
 /* REGISTER */
 main .form-container form:nth-of-type(2) {
-  right: -520px;
+  right: -320px;
   transition: 0.2s ease-in-out;
 }
 main .form-container form:nth-of-type(2) span:nth-of-type(1) {
