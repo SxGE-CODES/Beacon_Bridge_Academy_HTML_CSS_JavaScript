@@ -34,10 +34,72 @@
       </div>
     </nav>
 
+    <!-- MAIN -->
     <main>
-      <!-- FORM -->
-      <div class="form-box">
+      <div class="form-container">
         <!-- Login Form -->
+        <form action="" id="loginForm">
+          <span
+            >Don't have an account?
+            <a onclick="toggleRegister()">Sign up</a></span
+          >
+          <div class="header">Login</div>
+          <div id="focusDiv1">
+            <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="" />
+            <input type="text" placeholder="Enter your Email" id="inputFocus1" />
+          </div>
+          <div id="focusDiv2">
+            <img src="Assets/bootstrap-icons-1.8.2/lock.svg" alt="" />
+            <input type="text" placeholder="Password" id="inputFocus2" />
+          </div>
+          <div>
+            <input type="submit" value="Sign in" id="submit1" />
+          </div>
+          <div>
+              <a href="" onclick="toggleRegister()">Forgot password</a>
+          </div>
+        </form>
+
+        <!-- Registration Form -->
+        <form action="" id="registerForm">
+          <span>Have an account? <a onclick="toggleLogin()">Login</a></span>
+          <div class="header">Sign Up</div>
+          <div>
+            <div id="focusDiv3">
+              <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="">
+              <input type="text" name="" placeholder="Firstname" id="inputFocus3" />
+            </div>
+            <div id="focusDiv4">
+              <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="">
+              <input type="text" name="" placeholder="Lastname" id="inputFocus4" />
+            </div>
+          </div>
+          <div id="focusDiv5">
+            <img src="Assets/bootstrap-icons-1.8.2/envelope.svg" alt="">
+            <input type="email" name="" placeholder="Email" id="inputFocus5">
+          </div>
+          <div id="focusDiv6">
+            <img src="assets/bootstrap-icons-1.8.2/lock.svg" alt="">
+            <input type="password" name="" placeholder="password" id="inputFocus6">
+          </div>
+          <div>
+            <input type="submit" value="Register">
+          </div>
+          <span><a href="#">Terms and conditions</a></span>
+        </form>
+      </div>
+    </main>
+
+    <script src="scripts/register.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+    <main>
+      <FORM>
+      <div class="form-box">
+        <Login Form>
         <div class="login-container" id="login">
           <div class="top">
             <span
@@ -72,7 +134,7 @@
           </div>
         </div>
 
-        <!-- Registration Form -->
+        <- Registration Form ->
         <div class="register-container" id="register">
           <div class="top">
             <span
@@ -115,8 +177,4 @@
       </div>
     </main>
 
-    
-
-    <script src="scripts/register.js"></script>
-  </body>
-</html>
+-->
