@@ -1,0 +1,357 @@
+:root {
+  /* Website main colors */
+  --background-color: #faf3ea;
+  --main-color: #691c48;
+  --second-color: #bd842d;
+
+  /* Primary colors */
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: ##17a2b8;
+
+  /* Secondary colors */
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --gray-light: #f7f7f7;
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #212529;
+  --light: #f8f9fa;
+
+  /* Success colors */
+  --success: #28a745;
+  --success-dark: #1b7f4a;
+  --success-light: #c6f4d6;
+
+  /* Info colors */
+  --info: #17a2b8;
+  --info-dark: #0f6ab4;
+  --info-light: #b8daff;
+
+  /* Warning colors */
+  --warning: #ffc107;
+  --warning-dark: #ff9900;
+  --warning-light: #fff3cd;
+
+  /* Danger colors */
+  --danger: #dc3545;
+  --danger-dark: #bd2130;
+  --danger-light: #f1b9b9;
+
+  /* Neutral colors */
+  --neutral: #6c757d;
+  --neutral-dark: #343a40;
+  --neutral-light: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 0.2s ease-in;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  padding: none;
+  margin: none;
+  background: var(--danger-light);
+}
+
+nav {
+  background: var(--warning-light);
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* overflow: hidden; */
+}
+nav #navBrand {
+  width: max-content;
+}
+nav #navBrand a {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+}
+nav #navBrand a img {
+  width: 75px;
+  height: auto;
+  margin-right: -10px;
+}
+nav #navBrand a span {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 17px;
+}
+nav #navContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: max-content;
+  align-items: center;
+  padding: 0;
+}
+#toggleBtn::before {
+  content: "\2630"
+}
+nav #navContent #toggleBtn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  font-weight: 500;
+  background-color: var(--second-color);
+  border-radius: 3px;
+  margin-top: 20px;
+  transition: all 0.3s
+}
+nav #navContent #menu {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  gap: 5px;
+  transition: all 0.3s
+}
+nav #navContent #menu li {
+  font-size: 16px;
+  color: var(--main-color);
+  transition: all 0.3s;
+}
+nav #navContent #menu li:hover {
+  cursor: default;
+  color: var(--second-color);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+section {
+  width: 95%;
+  height: max-content;
+  padding: 25px 15px;
+  background: var(--light);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.divider {
+  border: 5px solid var(--danger-light);
+  width: 110%;
+}
+.first-part {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.second-part {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+#introduction {}
+#historyMission {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#visionValues {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#visionValues .second-part {
+  width: 100%;
+  gap: 0;
+}
+#visionValues .second-part div:nth-of-type(1) {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: max-content;
+}
+#visionValues .second-part div:nth-of-type(2) {
+  margin-left: 0px;
+  margin-right: auto;
+}
+#visionValues .second-part div:nth-of-type(2) li {
+  list-style:inside
+}
+
+
+
+/* RESPONSIVENESS */
+
+/* Extra Small */
+@media screen and (max-width: 576px) {
+  /* NavBar */
+  nav {
+    width: 100%;
+    height: max-content;
+  }
+  nav #navBrand.active {
+    margin-top: -114px;
+  }
+  nav #navContent #toggleBtn {
+    margin-bottom: 15px;
+  }
+  nav #navContent #toggleBtn.active {
+    margin-left: -48px;
+    color: var(--second-color);
+    background: var(--main-color);
+    border: 1px solid var(--second-color);
+  }
+  nav #navContent #menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  nav #navContent #menu {
+    display: none;
+  }
+
+
+}
+
+/* Small */
+@media screen and  (min-width: 576px) and (max-width: 768px) {
+  /* NavBar */
+  nav {
+    width: 100%;
+    height: max-content;
+  }
+  nav #navBrand.active {
+    margin-top: -114px;
+  }
+  nav #navContent #toggleBtn {
+    margin-bottom: 15px;
+  }
+  nav #navContent #toggleBtn.active {
+    margin-left: -48px;
+    color: var(--second-color);
+    background: var(--main-color);
+    border: 1px solid var(--second-color);
+  }
+  nav #navContent #menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  nav #navContent #menu {
+    display: none;
+  }
+}
+
+/* Medium */
+@media screen and  (min-width: 768px) and (max-width: 992px) {
+  nav {
+    width: 100%;
+  }
+  nav #navContent #toggleBtn {
+    display: none;
+  }
+  nav #navContent #menu {
+    margin-top: 18px;
+    gap: 10px;
+  }
+}
+
+
+/* Large */
+@media screen and  (min-width: 992px) and (max-width: 1200px) {
+  nav {
+    width: 100%;
+  }
+  nav #navContent #toggleBtn {
+    display: none;
+  }
+  nav #navContent #menu {
+    margin-top: 18px;
+    gap: 10px;
+  }
+  #visionValues .second-part div:nth-of-type(1) {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: max-content;
+  }
+  #visionValues .second-part div:nth-of-type(2) {
+    list-style: none;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  #visionValues .second-part div:nth-of-type(2) li {
+    list-style: none;
+  }
+}
+
+
+/* Extra Large */
+@media screen and  (min-width: 1200px) {
+  nav {
+    width: 100%;
+  }
+  nav #navContent #toggleBtn {
+    display: none;
+  }
+  nav #navContent #menu {
+    margin-top: 18px;
+    gap: 10px;
+  }
+}
+
+
+/* X-Extra Large */
+@media screen and  (min-width: 1400px) {
+  nav {
+    width: 100%;
+  }
+  nav #navContent #toggleBtn {
+    display: none;
+  }
+  nav #navContent #menu {
+    margin-top: 18px;
+    gap: 10px;
+  }
+}

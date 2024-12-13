@@ -74,6 +74,7 @@ nav {
   height: 60px;
   position: fixed;
   display: flex;
+  gap: 10px;
   flex-direction: row;
   justify-content: space-between;
   background: var(--warning-light);
@@ -120,6 +121,7 @@ nav #navContent #toggleBtn::before {
   background: var(--second-color);
   border: 0.5px solid var(--main-color);
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
 nav #navContent #menu {
@@ -150,6 +152,7 @@ nav #navContent #menu .nav-menu .navBtn {
   background: var(--main-color);
   font-weight: bold;
   transition: all 0.2s;
+  width: max-content;
 }
 nav #navContent #menu .nav-menu .navBtn:hover {
   background: var(--warning);
@@ -581,18 +584,19 @@ main .form-container form:nth-of-type(2) span:nth-of-type(2) a:hover {
     flex-direction: column;
   }
   nav #navContent #toggleBtn {
-    margin-top: 7%;
+    margin-top: 10px;
     transition: all 0.3s;
   }
   nav #navContent #toggleBtn.active {
-    margin-left: 0px;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 10px;
     background: var(--main-color);
     border: 1.5px solid var(--second-color);
     color: var(--second-color);
   }
   nav #navContent #menu {
     display: none;
+    padding-right: 10px;
   }
   nav #navContent #menu.active {
     display: flex;
@@ -631,8 +635,6 @@ main .form-container form:nth-of-type(2) span:nth-of-type(2) a:hover {
     transition: all 0.3s;
   }
   nav #navContent #toggleBtn.active {
-    margin-left: 0px;
-    margin-right: auto;
     background: var(--main-color);
     border: 1.5px solid var(--second-color);
     color: var(--second-color);

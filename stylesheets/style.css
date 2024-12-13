@@ -82,18 +82,19 @@ nav #navBrand {
   align-content: center;
   align-items: center;
   color: var(--main-color);
+  margin-top: 5px;
 }
 nav #navBrand a {
   text-decoration: none;
   color: var(--main-color);
   width: max-content;
+  height: 100%;
   display: flex;
-  align-content: center;
-  align-items: center;
 }
 nav #navBrand img {
-  width: 100px;
-  height: auto;
+  width: 75px;
+  height: 75px;
+  margin-top: -15px;
 }
 nav #navBrand span {
   font-weight: bold;
@@ -115,6 +116,7 @@ nav #navContent #toggleBtn::before {
   background: var(--second-color);
   border: 0.5px solid var(--main-color);
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
 nav #navContent #menu {
@@ -282,23 +284,25 @@ footer div:nth-of-type(2) a {
   }
   nav #navBrand img {
     width: 50px;
+    margin-top: 0px;
   }
   nav #navBrand span {
     font-size: medium;
     margin-left: 0px;
+    margin-top: 20px;
   }
   nav #navContent {
     display: flex;
     flex-direction: column;
   }
   nav #navContent #toggleBtn {
-    margin-top: 7px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: 0px;
   }
   nav #navContent #toggleBtn.active {
-    margin-left: 0px;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 0px;
     background: var(--main-color);
     border: 1.5px solid var(--second-color);
     color: var(--second-color);
@@ -429,6 +433,9 @@ footer div:nth-of-type(2) a {
 
 /* Medium */
 @media screen and (min-width: 768px) {
+  nav #navBrand a img {
+    height: auto;
+  }
   nav #navContent #toggleBtn {
     display: none;
   }

@@ -1,180 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beacon Bridge Academy - Login - Signup</title>
-    <link rel="stylesheet" href="stylesheets/register.css" />
-    <link rel="icon" type="icon/png" href="Assets/Icon.png" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div id="navBrand">
-        <a href="#">
-          <img src="Assets/Logo.png" alt="Brand Logo" class="img-fluid" />
-          <span>Beacon Bridge Academy</span>
-        </a>
-      </div>
-      <div id="navContent">
-        <button id="toggleBtn" aria-label="Toggle Menu"></button>
-        <ul id="menu">
-          <li class="nav-menu"><a href="#" class="active">About Us</a></li>
-          <li class="nav-menu">
-            <button class="navBtn" id="registerBtn" onclick="toggleRegister()">
-              Sign up
-            </button>
-          </li>
-          <li class="nav-menu last-menu">
-            <button class="navBtn" id="loginBtn" onclick="toggleLogin()">
-              Login
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- MAIN -->
-    <main>
-      <div class="form-container">
-        <!-- Login Form -->
-        <form action="" id="loginForm">
-          <span
-            >Don't have an account?
-            <a onclick="toggleRegister()">Sign up</a></span
-          >
-          <div class="header">Login</div>
-          <div id="focusDiv1">
-            <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="" />
-            <input type="text" placeholder="Enter your Email" id="inputFocus1" value="" />
-          </div>
-          <div id="focusDiv2">
-            <img src="Assets/bootstrap-icons-1.8.2/lock.svg" alt="" />
-            <input type="text" placeholder="Password" id="inputFocus2" value="" />
-          </div>
-          <div>
-            <input type="submit" value="Sign in" id="submit1" />
-          </div>
-          <div>
-              <a href="" onclick="toggleRegister()">Forgot password</a>
-          </div>
-        </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beacon Bridge Academy - Login - Signup</title>
+  <link rel="stylesheet" href="stylesheets/register.css" />
+  <link rel="icon" type="icon/png" href="Assets/Icon.png" />
+</head>
 
-        <!-- Registration Form -->
-        <form action="" id="registerForm">
-          <span>Have an account? <a onclick="toggleLogin()">Login</a></span>
-          <div class="header">Sign Up</div>
-          <div>
-            <div id="focusDiv3">
-              <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="">
-              <input type="text" name="" placeholder="Firstname" id="inputFocus3" value="" />
-            </div>
-            <div id="focusDiv4">
-              <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="">
-              <input type="text" name="" placeholder="Lastname" id="inputFocus4" value="" />
-            </div>
-          </div>
-          <div id="focusDiv5">
-            <img src="Assets/bootstrap-icons-1.8.2/envelope.svg" alt="">
-            <input type="email" name="" placeholder="Email" id="inputFocus5" value="">
-          </div>
-          <div id="focusDiv6">
-            <img src="assets/bootstrap-icons-1.8.2/lock.svg" alt="">
-            <input type="password" name="" placeholder="password" id="inputFocus6" value="" >
-          </div>
-          <div>
-            <input type="submit" value="Register" id="signUpBTN">
-          </div>
-          <span><a href="#">Terms and conditions</a></span>
-        </form>
-      </div>
-    </main>
+<body>
 
-    <script src="scripts/register.js"></script>
-  </body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div id="navBrand">
+      <a href="#">
+        <img src="Assets/Logo.png" alt="Brand Logo" class="img-fluid" />
+        <span>Beacon Bridge Academy</span>
+      </a>
+    </div>
+    <div id="navContent">
+      <button id="toggleBtn" aria-label="Toggle Menu"></button>
+      <ul id="menu">
+        <li class="nav-menu"><a href="#" class="active">About Us</a></li>
+        <li class="nav-menu">
+          <button class="navBtn" id="registerBtn" onclick="toggleRegister()">
+            Sign up
+          </button>
+        </li>
+        <li class="nav-menu last-menu">
+          <button class="navBtn" id="loginBtn" onclick="toggleLogin()">
+            Login
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <div class="form-container">
+      <!-- Login Form -->
+      <form action="" id="loginForm">
+        <span>Don't have an account?
+          <a onclick="toggleRegister()">Sign up</a></span>
+        <div class="header">Login</div>
+        <div id="focusDiv1">
+          <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="" />
+          <input type="text" placeholder="Enter your Email" id="inputFocus1" value="" />
+        </div>
+        <div id="focusDiv2">
+          <img src="Assets/bootstrap-icons-1.8.2/lock.svg" alt="" />
+          <input type="password" placeholder="Password" id="inputFocus2" value="" />
+          <img src="Assets/bootstrap-icons-1.8.2/view-list.svg" alt="">
+        </div>
+        <div>
+          <input type="submit" value="Sign in" id="submit1" />
+        </div>
+        <div>
+          <a href="" onclick="toggleRegister()">Forgot password</a>
+        </div>
+      </form>
+
+      <!-- Registration Form -->
+      <form action="" id="registerForm">
+        <span>Have an account? <a onclick="toggleLogin()">Login</a></span>
+        <div class="header">Sign Up</div>
+        <div>
+          <div id="focusDiv3">
+            <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="">
+            <input type="text" name="" placeholder="Firstname" id="inputFocus3" value="" />
+          </div>
+          <div id="focusDiv4">
+            <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="">
+            <input type="text" name="" placeholder="Lastname" id="inputFocus4" value="" />
+          </div>
+        </div>
+        <div id="focusDiv5">
+          <img src="Assets/bootstrap-icons-1.8.2/envelope.svg" alt="">
+          <input type="email" name="" placeholder="Email" id="inputFocus5" value="">
+        </div>
+        <div id="focusDiv6">
+          <img src="assets/bootstrap-icons-1.8.2/lock.svg" alt="">
+          <input type="password" name="" placeholder="password" id="inputFocus6" value="">
+        </div>
+        <div>
+          <input type="submit" value="Register" id="signUpBTN">
+        </div>
+        <span><a href="#">Terms and conditions</a></span>
+      </form>
+    </div>
+  </main>
+
+  <script src="scripts/register.js"></script>
+</body>
 </html>
-
-<!-- 
-
-    <main>
-      <FORM>
-      <div class="form-box">
-        <Login Form>
-        <div class="login-container" id="login">
-          <div class="top">
-            <span
-              >Don't have an account?
-              <a href="#" onclick="toggleRegister()">Sign up</a></span
-            >
-          </div>
-          <header>Login</header>
-          <div class="input-box">
-            <input
-              type="Email"
-              placeholder="Enter your Email"
-              class="input-field"
-            />
-            <img src="Assets/bootstrap-icons-1.8.2/envelope.svg" alt="" />
-          </div>
-          <div class="input-box">
-            <input type="password" placeholder="Password" class="input-field" />
-            <img src="Assets/bootstrap-icons-1.8.2/lock.svg" alt="" />
-          </div>
-          <div class="input-box">
-            <input type="submit" value="Login" class="submit" />
-          </div>
-          <div class="two-col">
-            <div class="one">
-              <input type="checkbox" id="loginCheck" />
-              <label for="loginCheck">Remember me</label>
-            </div>
-            <div class="two">
-              <label for=""><a href="#">|Forgot password?</a></label>
-            </div>
-          </div>
-        </div>
-
-        <- Registration Form ->
-        <div class="register-container" id="register">
-          <div class="top">
-            <span
-              >Have an account?
-              <a href="#" onclick="toggleLogin()">Login</a></span
-            >
-          </div>
-          <header>Sign up</header>
-          <div class="two-forms">
-            <div class="input-box">
-              <input type="text" placeholder="Firstname" class="input-field" />
-              <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="" />
-            </div>
-            <div class="input-box">
-              <input type="text" placeholder="Lastname" class="input-field" />
-              <img src="Assets/bootstrap-icons-1.8.2/person.svg" alt="" />
-            </div>
-          </div>
-          <div class="input-box">
-            <input type="Email" placeholder="Email" class="input-field" />
-            <img src="Assets/bootstrap-icons-1.8.2/envelope.svg" alt="" />
-          </div>
-          <div class="input-box">
-            <input type="password" placeholder="Password" class="input-field" />
-            <img src="Assets/bootstrap-icons-1.8.2/lock.svg" alt="" />
-          </div>
-          <div class="input-box">
-            <input type="submit" value="Register" class="submit" />
-          </div>
-          <div class="two-col">
-            <div class="one">
-              <input type="checkbox" id="registerCheck" />
-              <label for="registerCheck">Remember me</label>
-            </div>
-            <div class="two">
-              <label for=""><a href="#">Terms and Conditions</a></label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
--->
