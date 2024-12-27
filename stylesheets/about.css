@@ -358,6 +358,7 @@ nav #navContent #menu li:hover {
     border: 1px solid var(--second-color);
   }
   nav #navContent #menu.active {
+    margin-left: -265%;
     display: flex;
     flex-direction: column;
   }
