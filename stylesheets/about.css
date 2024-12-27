@@ -159,6 +159,11 @@ nav #navContent #menu li:hover {
 
 /* RESPONSIVENESS */
 @media (max-width: 300px) {
+  nav {
+    width: 100%;
+    height: max-content;
+    padding: 0 5px;
+  }
   nav #navContent #menu.active {
     margin-left: -200%;
     display: flex;
@@ -167,6 +172,11 @@ nav #navContent #menu li:hover {
 }
 
 @media (max-width: 375px) {
+  nav {
+    width: 100%;
+    height: max-content;
+    padding: 0 5px;
+  }
   nav #navContent #menu.active {
     margin-left: -210%;
     display: flex;
@@ -175,6 +185,11 @@ nav #navContent #menu li:hover {
 }
 
 @media (max-width: 425px) {
+  nav {
+    width: 100%;
+    height: max-content;
+    padding: 0 5px;
+  }
   nav #navContent #menu.active {
     margin-left: -210%;
     display: flex;
@@ -183,6 +198,11 @@ nav #navContent #menu li:hover {
 }
 
 @media (max-width: 472px) {
+  nav {
+    width: 100%;
+    height: max-content;
+    padding: 0 5px;
+  }
   nav #navContent #menu.active {
     margin-left: -250%;
     display: flex;
@@ -344,6 +364,7 @@ nav #navContent #menu li:hover {
   nav {
     width: 100%;
     height: max-content;
+    padding: 0 5px;
   }
   nav #navBrand.active {
     margin-top: -114px;
