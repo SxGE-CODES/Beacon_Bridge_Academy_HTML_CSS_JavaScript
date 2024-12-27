@@ -245,23 +245,64 @@ nav #navContent #menu li:hover {
     display: flex;
     flex-direction: column;
     padding: 15px 10px;
+    position: relative;
+  }
+  #footer a {
+    text-decoration: none;
+    cursor: default;
+    color: var(--light);
   }
   #footer > div:nth-child(1) {
     display: flex;
     align-content: center;
     justify-content: center;
+    padding-bottom: 15px;
   }
   #footer > div:nth-child(1) > div {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  #footer > div:nth-child(1) > .cont {
-    
+  #footer > div:nth-child(1) > #cont > div:nth-child(1) > div:nth-child(1),
+  #footer > div:nth-child(1) > #cont > div:nth-child(2) > div:nth-child(1),
+  #footer > div:nth-child(1) > #cont > div:nth-child(3) > div:nth-child(1) {
+    font-size: 25px;
+    text-align: center;
   }
+  #footer > div:nth-child(1) > #cont > div:nth-child(1) > div:nth-child(2) > div:hover {
+    color: var(--warning-light);
+    cursor: default;
+  }
+  #footer > div:nth-child(1) > #cont > div:nth-child(2) > div:nth-child(2) a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: all 0.3s;
+  }
+  #footer > div:nth-child(1) > #cont > div:nth-child(2) > div:nth-child(2) a:hover {
+    color: var(--warning);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  #footer > div:nth-child(1) > #cont > div:nth-child(3) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer > div:nth-child(1) > #cont > div:nth-child(3) > div:nth-child(1) > span:hover {
+    color: var(--warning-light);
+  }
+  #footer > div:nth-child(2) {
+    text-align: center;
+    color: var(--warning);
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+  #footer > a {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
 
-
-  
+  }
 }
 
 /* Small */
