@@ -93,7 +93,6 @@ nav #navBrand a {
 }
 nav #navBrand img {
   width: 75px;
-  height: 75px;
   margin-top: -15px;
 }
 nav #navBrand span {
@@ -282,9 +281,13 @@ footer div:nth-of-type(2) a {
   #navbar.active {
     height: max-content;
   }
+  nav #navBrand {
+    margin-top: -7px;
+  }
   nav #navBrand img {
-    width: 50px;
-    margin-top: 0px;
+    width: 70px;
+    height: 75px;
+    margin-top: -5px;
   }
   nav #navBrand span {
     font-size: medium;
@@ -298,7 +301,7 @@ footer div:nth-of-type(2) a {
   nav #navContent #toggleBtn {
     margin-top: 10px;
     margin-left: auto;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   nav #navContent #toggleBtn.active {
     margin-left: auto;
@@ -364,17 +367,31 @@ footer div:nth-of-type(2) a {
   #navbar.active {
     height: max-content;
   }
+  nav #navBrand {
+    margin-top: -7px;
+  }
+  nav #navBrand img {
+    width: 70px;
+    height: 75px;
+    margin-top: -5px;
+  }
+  nav #navBrand span {
+    font-size: medium;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
   nav #navContent {
     display: flex;
     flex-direction: column;
   }
   nav #navContent #toggleBtn {
-    margin-top: 14px;
-    transition: all 0.3s;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
   }
   nav #navContent #toggleBtn.active {
-    margin-left: 0px;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 0px;
     background: var(--main-color);
     border: 1.5px solid var(--second-color);
     color: var(--second-color);
@@ -434,7 +451,8 @@ footer div:nth-of-type(2) a {
 /* Medium */
 @media screen and (min-width: 768px) {
   nav #navBrand a img {
-    height: auto;
+    height: 80px;
+    margin-top: -20px;
   }
   nav #navContent #toggleBtn {
     display: none;

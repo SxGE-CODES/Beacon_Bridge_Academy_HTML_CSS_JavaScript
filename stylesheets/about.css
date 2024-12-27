@@ -238,6 +238,29 @@ nav #navContent #menu li:hover {
     flex-direction: column;
     gap: 5px;
   }
+
+  #footer {
+    background: var(--main-color);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+  #footer > div:nth-child(1) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  #footer > div:nth-child(1) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #footer > div:nth-child(1) > .cont {
+    
+  }
+
+
   
 }
 
